@@ -14,7 +14,8 @@ gem 'pg'
 gem 'mysql2'
 
 group :development, :test do
-  gem "pry-rails"
+  gem 'byebug'
+  gem 'pry-rails'
 end
 
 gemspec
