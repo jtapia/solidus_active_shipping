@@ -7,15 +7,11 @@ es-MX:
     new_package: "New Package"
     edit_package: "Edit Package"
     active_shipping_settings: "Active Shipping Settings"
-    ups_settings: "UPS Settings"
     fedex_settings: "FedEx Settings"
     usps_settings: "USPS Settings"
     canada_post_settings: "Canada Post Settings"
     canada_post_pws_settings: "Canada Post PWS Settings"
     origin_address_settings: "Origin Address Settings"
-    ups_login: 'UPS Login'
-    ups_password: 'UPS Password'
-    ups_key: 'UPS Key'
     shipper_number: 'Shipper Number'
     fedex_login: 'Fedex Login'
     fedex_password: 'Fedex Password'
@@ -52,17 +48,6 @@ es-MX:
       two_day_freight: "FedEx 2 Day Freight"
       two_day_freight_saturday_delivery: "FedEx 2 Day Freight Saturday Delivery"
       two_day_saturday_delivery: "FedEx 2 Day Saturday Delivery"
-    ups:
-      ground: "UPS Ground"
-      next_day_air: "UPS Next Day Air"
-      next_day_air_early_am: "UPS Next Day Air Early A.M."
-      next_day_air_saver: "UPS Next Day Air Saver"
-      saver: "UPS Saver"
-      second_day_air: "UPS Second Day Air"
-      three_day_select: "UPS Three-Day Select"
-      worldwide_expedited: "UPS Worldwide Expedited"
-      standard: "UPS Standard"
-      express: "UPS Express"
     usps:
       express_mail: "USPS Priority Mail Express"
       express_mail_international: "USPS Priority Mail Express International"
