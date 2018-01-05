@@ -20,20 +20,26 @@ describe "Checkout", type: :feature do
 
   before { order.reload }
 
-  context "with valid shipping address", :vcr do
-    it "does not break the per-item shipping method calculator", js: true do
-      add_to_cart(mug)
+  context "visitor makes checkout as guest without registration" do
+    before(:each) do
+      stock_location.stock_items.update_all(count_on_hand: 1)
+    end
 
-      click_button "Checkout"
+    context "with valid shipping address", :vcr do
+      it "does not break the per-item shipping method calculator", js: true do
+        add_to_cart(mug)
 
-      fill_in "order_email", with: "test@example.com"
-      click_button "Continue"
-      fill_in_address(valid_address)
-      click_button "Save and Continue"
+        click_button "Checkout"
 
-      # select default shipping
-      click_button "Save and Continue"
-      expect(page).to have_content("Shipping total: $100.00")
+        fill_in "order_email", with: "test@example.com"
+        click_button "Continue"
+        fill_in_address(valid_address)
+        click_button "Save and Continue"
+
+        # select default shipping
+        click_button "Save and Continue"
+        expect(page).to have_content("Shipping total: $100.00")
+      end
     end
   end
 end
