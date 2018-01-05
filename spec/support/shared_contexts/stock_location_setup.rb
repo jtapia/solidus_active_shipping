@@ -2,6 +2,7 @@ shared_context 'Canada stock location' do
   let(:ontario) do
     create(:state_with_autodiscover, country_iso: 'CA', state_code: 'ON')
   end
+
   let!(:stock_location) do
     create(
       :stock_location,
